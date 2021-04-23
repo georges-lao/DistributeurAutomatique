@@ -1,14 +1,25 @@
-﻿<Window x:Class="DistributeurAutomatique.MainWindow"
+﻿<Window x:Name="beverageView" x:Class="DistributeurAutomatique.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DistributeurAutomatique"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <ComboBox x:Name="UIbaverageList" HorizontalAlignment="Left" Margin="310,55,0,0" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="UIpriceLabel" Content="prix" HorizontalAlignment="Left" Margin="312,101,0,0" VerticalAlignment="Top" Width="118"/>
-
+        Title="MainWindow" Height="361.5" Width="519.5"
+        xmlns:viewmodel="clr-namespace:DistributeurAutomatique.viewModel">
+    <Window.DataContext>
+        <viewmodel:BeveragesViewModel></viewmodel:BeveragesViewModel>
+    </Window.DataContext>
+    
+    <Grid Margin="0,0,2,-7">
+        <ListView x:Name="beverageListView" ItemsSource="{Binding Beverages}" SelectedItem="{Binding SelectedBeverage}" SelectionChanged="BeverageListViewSelectionChanged" HorizontalAlignment="Left" Height="304" Margin="10,10,0,0" VerticalAlignment="Top" Width="220">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Name" Width="100" DisplayMemberBinding="{Binding Name}" />
+                    <GridViewColumn Header="Price" Width="100" DisplayMemberBinding="{Binding Price}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <TextBlock x:Name="BeverageDescriptionTB" Text="{Binding SelectedBeverage.Description, Mode=OneWay}" HorizontalAlignment="Left" Margin="248,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="71" Width="233"/>
     </Grid>
 </Window>

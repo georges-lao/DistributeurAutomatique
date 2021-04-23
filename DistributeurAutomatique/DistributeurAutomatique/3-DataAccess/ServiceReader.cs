@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using LumenWorks.Framework.IO.Csv;
 
-namespace DistributeurAutomatique._3_DataAccess
+namespace DistributeurAutomatique.DataAccess
 {
     public class ServiceReader : IBeverageReader
     {
@@ -18,12 +18,15 @@ namespace DistributeurAutomatique._3_DataAccess
         /// <returns>list of beverage</returns>
         public IEnumerable<Beverage> GetBeverages()
         {
-            var csvTable = new DataTable();
-            using (var csvReader = new CsvReader(new StreamReader(System.IO.File.OpenRead(@"..\4-DataStorage\beveragesList.csv")), true))
-            {
-                csvTable.Load(csvReader);
-            }
-            return new List<Beverage>();
+            //var csvTable = new DataTable();
+            //using (var csvReader = new CsvReader(new StreamReader(System.IO.File.OpenRead(@"..\4-DataStorage\beveragesList.csv")), true))
+            //{
+            //    csvTable.Load(csvReader);
+            //}
+            var result = new List<Beverage>();
+            result.Add(new Beverage { Id = 1, Name = "Coffee" , Price = "1€", Description = "super coffee"});
+            result.Add(new Beverage { Id = 2, Name = "Tea", Price = "2€", Description = "super Tea" });
+            return result;
         }
     }
 }
