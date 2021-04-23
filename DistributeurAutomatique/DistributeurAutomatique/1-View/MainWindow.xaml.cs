@@ -26,13 +26,7 @@ namespace DistributeurAutomatique
         public MainWindow()
         {
             InitializeComponent();
-
-
         }
-       
-        private void BeverageListViewSelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
 
-        }
     }
 }

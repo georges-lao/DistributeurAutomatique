@@ -34,11 +34,6 @@ namespace DistributeurAutomatique.viewModel
 
         public BeveragesViewModel ()
         {
-            loadPage();
-        }
-
-        private void loadPage()
-        {
             this._pageReader = new ServiceReader();
             this._beverages = _pageReader.GetBeverages();
         }
