@@ -32,9 +32,9 @@ namespace DistributeurAutomatique.viewModel
             }
         }
 
-        public BeveragesViewModel ()
+        public BeveragesViewModel (IBeverageReader serviceReader)
         {
-            this._pageReader = new ServiceReader();
+            this._pageReader = serviceReader;
             this._beverages = _pageReader.GetBeverages();
         }
 

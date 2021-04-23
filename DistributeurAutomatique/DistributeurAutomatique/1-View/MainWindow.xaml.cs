@@ -1,5 +1,6 @@
 ﻿using DistributeurAutomatique.DataAccess;
 using DistributeurAutomatique.Shared;
+using DistributeurAutomatique.viewModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,10 +23,12 @@ namespace DistributeurAutomatique
     /// </summary>
     public partial class MainWindow : Window
     {
-
-        public MainWindow()
+        BeveragesViewModel viewModel;
+        public MainWindow(BeveragesViewModel beverageViewModel)
         {
             InitializeComponent();
+            viewModel = beverageViewModel;
+            this.DataContext = viewModel;
         }
 
     }

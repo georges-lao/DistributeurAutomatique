@@ -5,11 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DistributeurAutomatique"
         mc:Ignorable="d"
-        Title="MainWindow" Height="361.5" Width="519.5"
-        xmlns:viewmodel="clr-namespace:DistributeurAutomatique.viewModel">
-    <Window.DataContext>
-        <viewmodel:BeveragesViewModel></viewmodel:BeveragesViewModel>
-    </Window.DataContext>
+        Title="MainWindow" Height="361.5" Width="519.5">
+
     
     <Grid Margin="0,0,2,-7">
         <ListView x:Name="beverageListView" ItemsSource="{Binding Beverages}" SelectedItem="{Binding SelectedBeverage}" HorizontalAlignment="Left" Height="304" Margin="10,10,0,0" VerticalAlignment="Top" Width="220">
