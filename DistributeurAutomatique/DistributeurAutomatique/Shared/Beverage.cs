@@ -15,6 +15,11 @@
         public string Name { get; set; }
 
         /// <summary>
+        /// Recipe ID
+        /// </summary>
+        public int RecipeId { get; set; }
+
+        /// <summary>
         /// Beverage Price
         /// </summary>
         public string Price { get; set; }

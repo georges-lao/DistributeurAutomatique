@@ -61,7 +61,9 @@
     <Compile Include="2-Presentation\BeveragesViewModel.cs" />
     <Compile Include="3-DataAccess\ServiceReader.cs" />
     <Compile Include="Shared\Beverage.cs" />
+    <Compile Include="Shared\DataToBeverageConverter.cs" />
     <Compile Include="Shared\IBeverageReader.cs" />
+    <Compile Include="Shared\Ingredient.cs" />
     <Page Include="1-View\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -94,6 +96,8 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="4-DataStorage\beveragesList.csv" />
+    <None Include="4-DataStorage\Ingredients.csv" />
+    <None Include="4-DataStorage\Recipes.csv" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

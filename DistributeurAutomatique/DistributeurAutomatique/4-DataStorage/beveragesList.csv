@@ -1,3 +1,6 @@
-﻿Café;1
-Thé;2
-Eau;0.2
+﻿id;beverageName;recipeId
+1;Expresso;1
+2;Café Allongé;2
+3;Capuccino;3
+4;Chocolat;4
+5;Thé;5

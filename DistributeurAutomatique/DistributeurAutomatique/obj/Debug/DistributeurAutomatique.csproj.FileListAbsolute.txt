@@ -6,7 +6,6 @@ C:\Users\alexandre\Documents\GitHub\DistributeurAutomatique\DistributeurAutomati
 C:\Users\alexandre\Documents\GitHub\DistributeurAutomatique\DistributeurAutomatique\DistributeurAutomatique\bin\Debug\LumenWorks.Framework.IO.xml
 C:\Users\alexandre\Documents\GitHub\DistributeurAutomatique\DistributeurAutomatique\DistributeurAutomatique\obj\Debug\1-View\MainWindow.g.cs
 C:\Users\alexandre\Documents\GitHub\DistributeurAutomatique\DistributeurAutomatique\DistributeurAutomatique\obj\Debug\App.g.cs
-C:\Users\alexandre\Documents\GitHub\DistributeurAutomatique\DistributeurAutomatique\DistributeurAutomatique\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\alexandre\Documents\GitHub\DistributeurAutomatique\DistributeurAutomatique\DistributeurAutomatique\obj\Debug\DistributeurAutomatique_MarkupCompile.cache
 C:\Users\alexandre\Documents\GitHub\DistributeurAutomatique\DistributeurAutomatique\DistributeurAutomatique\obj\Debug\DistributeurAutomatique_MarkupCompile.lref
 C:\Users\alexandre\Documents\GitHub\DistributeurAutomatique\DistributeurAutomatique\DistributeurAutomatique\obj\Debug\1-View\MainWindow.baml
