@@ -2,6 +2,9 @@
 
 namespace DistributeurAutomatique.Shared
 {
+    /// <summary>
+    /// Data Access interface
+    /// </summary>
     public interface IBeverageReader
     {
         /// <summary>

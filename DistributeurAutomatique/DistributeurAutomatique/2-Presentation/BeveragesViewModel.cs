@@ -1,14 +1,12 @@
-﻿using DistributeurAutomatique.DataAccess;
-using DistributeurAutomatique.Shared;
-using System;
+﻿using DistributeurAutomatique.Shared;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DistributeurAutomatique.viewModel
 {
+    /// <summary>
+    /// Main window viewModel
+    /// </summary>
     public class BeveragesViewModel : INotifyPropertyChanged
     {
         /// <summary>
@@ -18,11 +16,18 @@ namespace DistributeurAutomatique.viewModel
         private IBeverageReader _pageReader;
         private Beverage _selectedBeverage;
 
+        /// <summary>
+        /// Beverage list available
+        /// </summary>
         public IEnumerable<Beverage> Beverages
         {
             get { return _beverages; }
             set { _beverages = value;}
         }
+
+        /// <summary>
+        /// selected Beverage on UI
+        /// </summary>
         public Beverage SelectedBeverage
         {
             get { return _selectedBeverage; }
@@ -32,6 +37,10 @@ namespace DistributeurAutomatique.viewModel
             }
         }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="serviceReader">IBeverageReader</param>
         public BeveragesViewModel (IBeverageReader serviceReader)
         {
             this._pageReader = serviceReader;

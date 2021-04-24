@@ -1,5 +1,8 @@
 ﻿namespace DistributeurAutomatique.Shared
 {
+    /// <summary>
+    /// class represent beverage object
+    /// </summary>
     public class Beverage
     {
         /// <summary>

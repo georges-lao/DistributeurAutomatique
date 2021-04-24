@@ -6,8 +6,6 @@
         xmlns:local="clr-namespace:DistributeurAutomatique"
         mc:Ignorable="d"
         Title="MainWindow" Height="361.5" Width="519.5">
-
-    
     <Grid Margin="0,0,2,-7">
         <ListView x:Name="beverageListView" ItemsSource="{Binding Beverages}" SelectedItem="{Binding SelectedBeverage}" HorizontalAlignment="Left" Height="304" Margin="10,10,0,0" VerticalAlignment="Top" Width="220">
             <ListView.View>
