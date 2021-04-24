@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DistributeurAutomatique"
         mc:Ignorable="d"
-        Title="MainWindow" Height="361.5" Width="519.5">
-    <Grid Margin="0,0,2,-7">
-        <ListView x:Name="beverageListView" ItemsSource="{Binding Beverages}" SelectedItem="{Binding SelectedBeverage}" HorizontalAlignment="Left" Height="304" Margin="10,10,0,0" VerticalAlignment="Top" Width="220">
+        Title="MainWindow" Height="301.5" Width="519.5">
+    <Grid Margin="0,0,2,14">
+        <ListView x:Name="beverageListView" ItemsSource="{Binding Beverages}" SelectedItem="{Binding SelectedBeverage}" HorizontalAlignment="Left" Height="180" Margin="10,10,0,0" VerticalAlignment="Top" Width="104">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Name" Width="100" DisplayMemberBinding="{Binding Name}" />
-                    <GridViewColumn Header="Price" Width="100" DisplayMemberBinding="{Binding Price}" />
                 </GridView>
             </ListView.View>
         </ListView>
-        <TextBlock x:Name="BeverageDescriptionTB" Text="{Binding SelectedBeverage.Description, Mode=OneWay}" HorizontalAlignment="Left" Margin="248,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="71" Width="233"/>
+        <TextBlock x:Name="BeverageDescriptionTB" Text="{Binding SelectedBeverage.Description, Mode=OneWay}" HorizontalAlignment="Left" Margin="134,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="119" Width="155"/>
+        <TextBlock x:Name="BeveragePriceTB" Text="{Binding SelectedBeverage.Price, Mode=OneWay}" HorizontalAlignment="Left" Margin="311,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="82" Width="141"/>
     </Grid>
 </Window>

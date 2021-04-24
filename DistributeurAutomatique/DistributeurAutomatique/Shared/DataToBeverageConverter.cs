@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace DistributeurAutomatique.Shared
 {
@@ -23,6 +19,7 @@ namespace DistributeurAutomatique.Shared
             result.Id = int.Parse(t[0]);
             result.Name = t[1];
             result.RecipeId = int.Parse(t[2]);
+            result.Description = t[3];
 
             var r = recipes[result.RecipeId - 1].Split(';');
             float price = 0;
@@ -30,7 +27,7 @@ namespace DistributeurAutomatique.Shared
             {
                 price += ingredients[int.Parse(r[i])-1].Price;
             }
-            result.Price = price.ToString();
+            result.Price = price.ToString() + " €";
 
             return result;
         }

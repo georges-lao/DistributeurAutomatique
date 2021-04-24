@@ -1,6 +1,6 @@
-﻿id;beverageName;recipeId
-1;Expresso;1
-2;Café Allongé;2
-3;Capuccino;3
-4;Chocolat;4
-5;Thé;5
+﻿id;beverageName;recipeId;Description
+1;Expresso;1;1 dose de café - 1 dose d’eau
+2;Café Allongé;2;1 dose de café - 2 doses d’eau
+3;Capuccino;3;1 dose de café - 1 dose de chocolat - 1 dose d’eau - 1 dose de crème
+4;Chocolat;4;3 doses de chocolat - 2 doses de lait - 1 dose d’eau - 1 dose de sucre
+5;Thé;5;1 dose de thé - 2 doses d’eau
